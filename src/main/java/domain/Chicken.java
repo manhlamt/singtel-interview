@@ -1,14 +1,16 @@
 package domain;
 
 public class Chicken extends Bird {
+    public static String MALE_VOICE = "Cock-a-doodle-doo";
+    public static String FEMALE_VOICE = "Cluck, cluck";
     public Chicken() {
-        super("Cluck, cluck");
+        super(FEMALE_VOICE);
     }
 
     public Chicken(Gender gender) {
-        super("Cluck, cluck");
+        super(FEMALE_VOICE);
         if (gender == Gender.MALE) {
-            super.setVoice("Cock-a-doodle-doo");
+            super.setVoice(MALE_VOICE);
         }
     }
 

@@ -1,7 +1,12 @@
 import domain.Bird;
+import domain.Cat;
 import domain.Chicken;
+import domain.Dog;
 import domain.Duck;
 import domain.Gender;
+import domain.Parrot;
+
+import javax.sound.midi.Soundbank;
 
 public class Solution {
     public static void main (String[] args) {
@@ -27,5 +32,21 @@ public class Solution {
         System.out.println("Question 3: ");
         final Chicken rooster = new Chicken(Gender.MALE);
         rooster.says();
+
+        System.out.println("Question 4: ");
+        final Parrot woofParrot = new Parrot();
+        woofParrot.mimic(Dog.VOICE);
+        woofParrot.says();
+
+        final Parrot meowParrot = new Parrot();
+        meowParrot.mimic(Cat.VOICE);
+        meowParrot.says();
+
+        final Parrot cockParrot = new Parrot();
+        cockParrot.mimic(Chicken.FEMALE_VOICE);
+        cockParrot.says();
+
+        final Parrot wildParrot = new Parrot();
+        wildParrot.says();
     }
 }
