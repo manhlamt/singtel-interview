@@ -3,6 +3,7 @@ import domain.Cat;
 import domain.Chicken;
 import domain.Dog;
 import domain.Duck;
+import domain.Fish;
 import domain.Gender;
 import domain.Parrot;
 
@@ -48,5 +49,21 @@ public class Solution {
 
         final Parrot wildParrot = new Parrot();
         wildParrot.says();
+
+        System.out.println("Section B, Question 1:");
+        final Fish fish = new Fish();
+        fish.swim();
+        try {
+            fish.walk();
+        } catch (UnsupportedOperationException e) {
+            System.out.print("Error: ");
+            System.out.println(e.getMessage());
+        }
+        try {
+            fish.says();
+        } catch (UnsupportedOperationException e) {
+            System.out.print("Error: ");
+            System.out.println(e.getMessage());
+        }
     }
 }
