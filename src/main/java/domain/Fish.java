@@ -1,6 +1,6 @@
 package domain;
 
-public class Fish extends Animal {
+public class Fish extends Animal implements SwimmingAnimal{
     private String color;
 
     private Size size;
@@ -33,10 +33,6 @@ public class Fish extends Animal {
         } else {
             System.out.println("Yum yum");
         }
-    }
-
-    public void swim() {
-        System.out.println("I am swimming");
     }
 
     public boolean isHerbivore() {

@@ -2,6 +2,7 @@ import domain.Bird;
 import domain.Cat;
 import domain.Chicken;
 import domain.Dog;
+import domain.Dolphin;
 import domain.Duck;
 import domain.Fish;
 import domain.Gender;
@@ -77,5 +78,9 @@ public class Solution {
         System.out.println("Lets Eat other fishes");
         shark.eatOtherFish();
         clownFish.eatOtherFish();
+
+        System.out.println("Section B, Question 3:");
+        final Dolphin dolphin = new Dolphin();
+        dolphin.swim();
     }
 }
