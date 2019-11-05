@@ -1,6 +1,7 @@
 import domain.Bird;
 import domain.Chicken;
 import domain.Duck;
+import domain.Gender;
 
 public class Solution {
     public static void main (String[] args) {
@@ -22,5 +23,9 @@ public class Solution {
             System.out.print("Error: ");
             System.out.println(e.getMessage());
         }
+
+        System.out.println("Question 3: ");
+        final Chicken rooster = new Chicken(Gender.MALE);
+        rooster.says();
     }
 }

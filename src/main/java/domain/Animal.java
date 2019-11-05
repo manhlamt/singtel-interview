@@ -10,6 +10,10 @@ public class Animal {
         this.voice = voice;
     }
 
+    public void setVoice(String voice) {
+        this.voice = voice;
+    }
+
     public void walk(){
         System.out.println("I am walking");
     }

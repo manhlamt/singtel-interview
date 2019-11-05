@@ -24,4 +24,11 @@ public class ChickenTest {
         chicken.says();
         verify(out).println(eq("Cluck, cluck"));
     }
+
+    @Test
+    public void testSays_rooster_shouldCock() {
+        final Chicken rooster = new Chicken(Gender.MALE);
+        rooster.says();
+        verify(out).println(eq("Cock-a-doodle-doo"));
+    }
 }
