@@ -1,15 +1,15 @@
-import domain.Bird;
+package domain;
+
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.PrintStream;
 
-import static org.mockito.Mockito.mock;
 import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class BirdTest {
+public class ChickenTest {
     private PrintStream out;
 
     @Before
@@ -19,9 +19,9 @@ public class BirdTest {
     }
 
     @Test
-    public void testSing_shouldPrintlnCorrectly() {
-        final Bird bird = new Bird();
-        bird.sing();
-        verify(out).println(eq("I'm singing ... chirp chirp !!!"));
+    public void testSays_shouldCluck() {
+        final Chicken chicken = new Chicken();
+        chicken.says();
+        verify(out).println(eq("Cluck, cluck"));
     }
 }

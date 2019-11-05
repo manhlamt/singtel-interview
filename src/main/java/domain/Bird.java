@@ -1,6 +1,14 @@
 package domain;
 
 public class Bird extends Animal{
+    public Bird(String voice) {
+        super(voice);
+    }
+
+    public Bird() {
+        super();
+    }
+
     public void fly() {
         System.out.println("I am flying");
     }
