@@ -1,6 +1,6 @@
 package domain;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements WalkingAnimal {
     public static String VOICE = "Meow";
 
     public Cat() {
