@@ -10,11 +10,6 @@ public class Fish extends Animal implements SwimmingAnimal{
     private boolean funny;
 
     @Override
-    public void walk() {
-        throw new UnsupportedOperationException("Fish does not walk");
-    }
-
-    @Override
     public void says() {
         throw new UnsupportedOperationException("Fish does not say");
     }

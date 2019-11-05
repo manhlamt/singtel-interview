@@ -55,12 +55,6 @@ public class Solution {
         final Fish fish = new Fish();
         fish.swim();
         try {
-            fish.walk();
-        } catch (UnsupportedOperationException e) {
-            System.out.print("Error: ");
-            System.out.println(e.getMessage());
-        }
-        try {
             fish.says();
         } catch (UnsupportedOperationException e) {
             System.out.print("Error: ");
