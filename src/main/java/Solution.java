@@ -65,5 +65,17 @@ public class Solution {
             System.out.print("Error: ");
             System.out.println(e.getMessage());
         }
+
+        System.out.println("Section B, Question 2:");
+        final Fish shark = Fish.makeShark();
+        final Fish clownFish = Fish.makeClownFish();
+        System.out.println(String.format("Shark is %s and %s", shark.getSize(), shark.getColor()));
+        System.out.println(String.format("ClownFish is %s and %s", clownFish.getSize(), clownFish.getColor()));
+        System.out.println("Lets make jones");
+        shark.makeJokes();
+        clownFish.makeJokes();
+        System.out.println("Lets Eat other fishes");
+        shark.eatOtherFish();
+        clownFish.eatOtherFish();
     }
 }
